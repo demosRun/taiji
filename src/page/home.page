@@ -1,0 +1,43 @@
+<template>
+  <div class="example">
+    <temple name="topBar" src="https://going.run/public/7d7233398a2d8e3dbfe0c51db7158223.page"></temple>
+    <!-- 主要内容区域 -->
+    <div class="home-content">
+      <temple name="titleBar" src="./src/module/titleBar.page"></temple>
+      <temple name="realTimeBar" src="./src/module/realTimeBar.page"></temple>
+    </div>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    data: {
+    },
+    created: () => {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+  .example {
+    background-image: url('@&bg.png&');
+    background-size: 100%;
+    .click {
+      color: #009fe9;
+      cursor: pointer;
+    }
+    .click:hover {
+      color: gold;
+    }
+  }
+  .home-content {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  .search-bar {
+    height: 60px;
+  }
+</style>

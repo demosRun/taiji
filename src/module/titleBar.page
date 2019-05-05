@@ -1,0 +1,51 @@
+<template>
+  <div class="title-bar">
+    <a class="title-bar-item" @for="item in itemLiat" href="{{item.url}}">{{item.name}}</a>
+    <div class="clear"></div>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      itemLiat: [
+        {"name": "新闻", "url": "http://www.people.com.cn/"},
+        {"name": "名队", "url": "http://www.people.com.cn/"},
+        {"name": "名门", "url": "http://www.people.com.cn/"},
+        {"name": "圣地", "url": "http://www.people.com.cn/"},
+        {"name": "公益", "url": "http://www.people.com.cn/"},
+        {"name": "科学", "url": "http://www.people.com.cn/"},
+        {"name": "太极乐", "url": "http://www.people.com.cn/"},
+      ]
+    }
+  }
+</script>
+
+<style lang="less">
+.title-bar {
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 40px;
+  background-color: #ce262a;
+  a {
+    display: block;
+    color: white;
+    float: left;
+    margin: 10px 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-left: 1px solid white;
+  }
+  a:nth-last-child(2) {
+    border-right: 1px solid white;
+  }
+}
+.title-bar-item {
+  width: 129px;
+  letter-spacing: 12px;
+}
+</style>
