@@ -1,0 +1,25 @@
+<template>
+  <div class="title-bar">
+    <span class="column">咨询</span>
+    <span class="title">政策解读</span>
+    <a class="more" href="#"></a>
+  </div>
+</template>
+
+<style lang="less">
+.title-bar {
+  font-size: 21px;
+  position: relative;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.column {
+  display: inline-block;
+  background-color: #ce262a;
+  width: 120px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  margin-right: 30px;
+}
+</style>

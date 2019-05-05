@@ -1,0 +1,14 @@
+<template>
+  <div class="ad">广告位</div>
+</template>
+
+<style lang="less">
+.ad {
+  height: 70px;
+  margin: 0 20px;
+  background-color: #c2c1c1;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+}
+</style>

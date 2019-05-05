@@ -7,6 +7,9 @@ body, html {
   background-color: #f8f8f8;
   font-family: Microsoft YaHei;
 }
+body {
+  background-image: url('@&bg-spot.png&');
+}
 /* 清除浮动 */
 .clear {
   clear: both;
@@ -14,6 +17,15 @@ body, html {
 h1, h2, h3, h4, h5, input {
   margin: 0;
   padding: 0;
+}
+ul, li {
+  list-style-type: none;
+}
+li:before {
+  content: '•';
+  width: 25px;
+  display: inline-block;
+  text-align: center;
 }
 a {
   text-decoration: none;

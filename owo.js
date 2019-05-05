@@ -29,14 +29,23 @@ module.exports = {
       babel: true,
       // 是否异步加载此脚本,请确保此脚本不会对DOM进行操作
       defer: true
-    }
+    },
+    {
+      name: "swiper",
+      src: "https://cunchu.site/ozzx/script/idangerous.swiper2.7.0.min.js"
+    },
   ],
   // 使用到的样式列表
   styleList: [
     {
       name: "main",
-      src: "./src/main.css"
-    }
+      src: "./src/main.css",
+      resource: true
+    },
+    {
+      name: "swiper",
+      src: "https://cunchu.site/ozzx/style/idangerous.swiper2.7.0.css"
+    },
   ],
   // 页面清单
   pageList: [

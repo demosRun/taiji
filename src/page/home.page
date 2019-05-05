@@ -5,16 +5,28 @@
     <div class="home-content">
       <temple name="titleBar" src="./src/module/titleBar.page"></temple>
       <temple name="realTimeBar" src="./src/module/realTimeBar.page"></temple>
+      <temple name="banner" src="./src/module/banner.page"></temple>
+      <temple name="ad" src="./src/module/ad.page"></temple>
+      <div class="content-box">
+        <div class="left">
+          <temple name="titleBar2" src="./src/module/titleBar2.page"></temple>
+          <temple name="consultation" src="./src/module/consultation.page"></temple>
+        </div>
+        <div class="right">
+          <temple name="titleBar3" src="./src/module/titleBar3.page">大咖说</temple>
+          <temple name="imageShow" src="./src/module/imageShow.page"></temple>
+        </div>
+        <div class="clear"></div>
+      </div>
     </div>
+    <!-- 底部版权信息 -->
+    <temple name="copyright" src="https://going.run/public/e0504bd4054937501c2fe0f22b43fe1e.page"></temple>
   </div>
 </template>
 
 <script>
   module.exports = {
     data: {
-    },
-    created: () => {
-
     }
   }
 </script>
@@ -24,6 +36,7 @@
   .example {
     background-image: url('@&bg.png&');
     background-size: 100%;
+    background-repeat: no-repeat;
     .click {
       color: #009fe9;
       cursor: pointer;
@@ -39,5 +52,29 @@
   }
   .search-bar {
     height: 60px;
+  }
+  .content-box {
+    margin: 0 20px;
+    padding: 10px 0;
+    .left {
+      width: 630px;
+      float: left;
+    }
+    .right {
+      float: left;
+      width: 300px;
+      padding-left: 30px;
+    }
+  }
+  // 查看更多
+  .more {
+    background-image: url('@&more.png&');
+    width: 50px;
+    height: 12px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 </style>

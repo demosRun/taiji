@@ -1,0 +1,14 @@
+<template>
+  <div class="title-bar">
+    <slot></slot>
+  </div>
+</template>
+
+<style lang="less">
+.title-bar {
+  font-size: 21px;
+  position: relative;
+  line-height: 50px;
+}
+
+</style>
