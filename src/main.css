@@ -5,11 +5,10 @@ body, html {
   width: 100%;
   user-select: text;
   min-width: 1200px;
-  background-color: #f8f8f8;
   font-family: Microsoft YaHei;
   -webkit-overflow-scrolling: touch;
 }
-body {
+html {
   background-image: url('@&bg-spot.png&');
 }
 /* 清除浮动 */
