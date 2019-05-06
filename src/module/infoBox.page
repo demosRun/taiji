@@ -1,6 +1,6 @@
 <template>
   <div class="info-box">
-    <div class="image-item" @for="item in imageList">
+    <div class="image-item" @for="item in data.imageList">
       <a class="left" href="{{item.url}}">
         <img class="left" src="@&video.png&"/>
         <div class="info">{{item.name}}</div>
@@ -11,7 +11,7 @@
       </div>
       <div class="clear"></div>
     </div>
-    <li class="new-item" @for="item in newsList"><a href="{{item.url}}">{{item.name}}</a></li>
+    <li class="new-item" @for="item in data.newsList"><a href="{{item.url}}">{{item.name}}</a></li>
   </div>
 </template>
 

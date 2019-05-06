@@ -1,6 +1,6 @@
 <template>
   <div class="info-box-3">
-    <li class="new-item" @for="item in newsList"><a href="{{item.url}}">{{item.name}}</a></li>
+    <li class="new-item" @for="item in data.newsList"><a href="{{item.url}}">{{item.name}}</a></li>
   </div>
 </template>
 

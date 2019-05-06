@@ -2,7 +2,7 @@
   <div class="card-show">
     <a class="title-bar" href="#">传承谱系</a>
     <a class="more" href="#"></a>
-    <li class="new-item" @for="item in newsList"><a href="{{item.url}}">{{item.name}}</a></li>
+    <li class="new-item" @for="item in data.newsList"><a href="{{item.url}}">{{item.name}}</a></li>
   </div>
 </template>
 

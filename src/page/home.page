@@ -21,7 +21,7 @@
       <div class="content-box stage">
         <!-- 小型卡片 -->
         <div class="news left">
-          <temple name="titleBar3" src="./src/module/titleBar3.page">工艺</temple>
+          <temple name="titleBar3" src="./src/module/titleBar3.page">公益</temple>
           <temple name="infoBox" src="./src/module/infoBox.page"></temple>
         </div>
         <!-- 小型卡片 -->
@@ -40,8 +40,8 @@
       <div class="content-box">
         <!-- 祥云小卡片1 -->
         <div class="news left">
-          <temple name="titleBar3" src="./src/module/titleBar3.page">工艺</temple>
-          <temple name="cardShow" src="./src/module/cardShow.page"></temple>
+          <temple name="titleBar3" src="./src/module/titleBar3.page">名门</temple>
+          <temple name="cardShow" title="df" src="./src/module/cardShow.page"></temple>
         </div>
         <!-- 祥云小卡片2 -->
         <div class="news left">
@@ -50,7 +50,7 @@
         </div>
         <!-- 图文卡片 -->
         <div class="news left">
-          <temple name="titleBar4" src="./src/module/titleBar4.page">工艺</temple>
+          <temple name="titleBar4" src="./src/module/titleBar4.page">太极乐</temple>
           <temple name="infoBox3" src="./src/module/infoBox3.page"></temple>
         </div>
         <div class="clear"></div>
@@ -59,7 +59,7 @@
       <div class="content-box">
         <!-- 祥云小卡片1 -->
         <div class="news left">
-          <temple name="titleBar3" src="./src/module/titleBar3.page">工艺</temple>
+          <temple name="titleBar3" src="./src/module/titleBar3.page">科学</temple>
           <temple name="cardShow" src="./src/module/cardShow.page"></temple>
         </div>
         <!-- 祥云小卡片2 -->
@@ -84,7 +84,7 @@
         </div>
         <!-- 广告卡片 -->
         <div class="news left">
-          <temple name="titleBar3" src="./src/module/titleBar3.page">启动仪式</temple>
+          <temple name="titleBar3" src="./src/module/titleBar3.page">推荐</temple>
           <temple name="ad" src="./src/module/ad.page"></temple>
           <temple name="ad" src="./src/module/ad.page"></temple>
           <temple name="ad" src="./src/module/ad.page"></temple>

@@ -1,6 +1,6 @@
 <template>
   <div class="title-bar">
-    <a class="title-bar-item" @for="item in itemLiat" href="{{item.url}}">{{item.name}}</a>
+    <a class="title-bar-item" @for="item in data.itemLiat" href="{{item.url}}">{{item.name}}</a>
     <div class="clear"></div>
   </div>
 </template>

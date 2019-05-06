@@ -6,7 +6,7 @@
     <a class="title">专访霍启刚:推动年轻人积极参与国家发展</a>
     <a href="#" class="text">辽宁客场击败新疆队击败新疆队辽宁客场击败新疆队击败新疆队</a>
     <a class="title">往期大咖</a>
-    <a class="people-item" @for="item in peopleList" href="{{item.url}}">{{item.name}}</a>
+    <a class="people-item" @for="item in data.peopleList" href="{{item.url}}">{{item.name}}</a>
   </div>
 </template>
 

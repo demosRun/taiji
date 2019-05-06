@@ -21,7 +21,7 @@
       <div class="pagination-pPX8XxuUyIehAAEu"></div>
     </div>
     <div class="right">
-      <div class="right-item" @for="item in newsList">
+      <div class="right-item" @for="item in data.newsList">
         <a class="title" href="{{item.url}}">{{item.name}}</a>
         <div class="text">{{item.text}}</div>
       </div>
