@@ -1,16 +1,5 @@
 <template>
-  <div class="info-box">
-    <div class="image-item" @for="item in imageList">
-      <a class="left" href="{{item.url}}">
-        <img class="left" src="@&video.png&"/>
-        <div class="info">{{item.name}}</div>
-      </a>
-      <div class="right">
-        <a class="title" href="#">{{item.title}}</a>
-        <a class="text" href="#">{{item.info}}</a>
-      </div>
-      <div class="clear"></div>
-    </div>
+  <div class="info-box-3">
     <li class="new-item" @for="item in newsList"><a href="{{item.url}}">{{item.name}}</a></li>
   </div>
 </template>
@@ -18,10 +7,9 @@
 <script>
   module.exports = {
     data: {
-      imageList: [
-        {"name": "人民太极平台启动", "url": "http://www.people.com.cn/", "title": "公益形象大使", "info": "人民太极平台启动弘扬人民太极论坛探讨"},
-      ],
       newsList: [
+        {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
+        {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
         {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
         {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
         {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
@@ -31,9 +19,9 @@
 </script>
 
 <style lang="less">
-.info-box {
-  width: 310px;
-  padding: 10px 0;
+.info-box-3 {
+  width: 290px;
+  padding: 25px 10px;
   background-color: #f2f2f2;
 }
 .left, .right {
@@ -73,19 +61,13 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     height: 48px;
-    color: #595757;
     text-indent: 12px;
     -webkit-box-orient: vertical;
   }
   .title {
-    display: block;
     font-size: 14px;
     font-weight: bold;
     line-height: 40px;
-    color: #595757;
-  }
-  .title:hover {
-    color: #c00;
   }
 }
 .new-item {
@@ -95,11 +77,5 @@
     line-height: 28px;
     display: inline-block;
   }
-}
-.new-item:nth-child(2) { 
-  padding-top: 15px;
-}
-.new-item:nth-last-child(1) {
-  padding-bottom: 11px;
 }
 </style>

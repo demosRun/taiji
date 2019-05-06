@@ -5,10 +5,11 @@
 <style lang="less">
 .ad {
   height: 70px;
-  margin: 0 20px;
+  margin: 20px;
   background-color: #c2c1c1;
   text-align: center;
   line-height: 70px;
   color: white;
+  cursor: pointer;
 }
 </style>

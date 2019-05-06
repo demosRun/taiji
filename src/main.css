@@ -3,8 +3,11 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
+  user-select: text;
+  min-width: 1200px;
   background-color: #f8f8f8;
   font-family: Microsoft YaHei;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   background-image: url('@&bg-spot.png&');
@@ -30,7 +33,12 @@ li:before {
   line-height: 28px;
 }
 a {
+  cursor: pointer;
   text-decoration: none;
+}
+a:hover {
+  color: #c00;
+  text-decoration: underline;
 }
 .o-topBar {
   margin-bottom: 14%;

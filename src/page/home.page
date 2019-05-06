@@ -18,7 +18,7 @@
         </div>
         <div class="clear"></div>
       </div>
-      <div class="content-box">
+      <div class="content-box stage">
         <!-- 小型卡片 -->
         <div class="news left">
           <temple name="titleBar3" src="./src/module/titleBar3.page">工艺</temple>
@@ -36,7 +36,63 @@
         </div>
         <div class="clear"></div>
       </div>
+      <!-- 小卡片区域1 -->
+      <div class="content-box">
+        <!-- 祥云小卡片1 -->
+        <div class="news left">
+          <temple name="titleBar3" src="./src/module/titleBar3.page">工艺</temple>
+          <temple name="cardShow" src="./src/module/cardShow.page"></temple>
+        </div>
+        <!-- 祥云小卡片2 -->
+        <div class="news left">
+          <temple name="titleBar3" src="./src/module/titleBar3.page"></temple>
+          <temple name="cardShow" src="./src/module/cardShow.page"></temple>
+        </div>
+        <!-- 图文卡片 -->
+        <div class="news left">
+          <temple name="titleBar4" src="./src/module/titleBar4.page">工艺</temple>
+          <temple name="infoBox3" src="./src/module/infoBox3.page"></temple>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!-- 小卡片区域2 -->
+      <div class="content-box">
+        <!-- 祥云小卡片1 -->
+        <div class="news left">
+          <temple name="titleBar3" src="./src/module/titleBar3.page">工艺</temple>
+          <temple name="cardShow" src="./src/module/cardShow.page"></temple>
+        </div>
+        <!-- 祥云小卡片2 -->
+        <div class="news left">
+          <temple name="titleBar3" src="./src/module/titleBar3.page"></temple>
+          <temple name="cardShow" src="./src/module/cardShow.page"></temple>
+        </div>
+        <!-- 图文卡片 -->
+        <div class="news left">
+          <temple name="titleBar3" src="./src/module/titleBar3.page"></temple>
+          <temple name="cardShow" src="./src/module/cardShow.page"></temple>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!-- 底部图片和广告位 -->
+      <div class="content-box indent">
+        <div class="big-image-box left">
+          <temple name="titleBar3" src="./src/module/titleBar3.page">启动仪式</temple>
+          <a class="image-box" href="#">
+            <img src="@&image.png&">
+          </a>
+        </div>
+        <!-- 广告卡片 -->
+        <div class="news left">
+          <temple name="titleBar3" src="./src/module/titleBar3.page">启动仪式</temple>
+          <temple name="ad" src="./src/module/ad.page"></temple>
+          <temple name="ad" src="./src/module/ad.page"></temple>
+          <temple name="ad" src="./src/module/ad.page"></temple>
+        </div>
+        <div class="clear"></div>
+      </div>
     </div>
+    <temple name="float" src="./src/module/float.page"></temple>
     <!-- 底部版权信息 -->
     <temple name="copyright" src="https://owo.ink/public/e0504bd4054937501c2fe0f22b43fe1e.page"></temple>
   </div>
@@ -77,27 +133,35 @@
     .left {
       float: left;
     }
-    .long-news {
+    .long-news, .big-image-box {
       width: 630px;
+    }
+    
+    .big-image-box {
+      .image-box {
+        display: block;
+      }
+      img {
+        width: 100%;
+        height: 360px;
+      }
     }
     .video-box {
       width: 300px;
       padding-left: 30px;
     }
     .news {
-      width: 300px;
-      margin-right: 15px;
+      width: 310px;
+      margin-left: 10px;
     }
   }
-  // 查看更多
-  .more {
-    background-image: url('@&more.png&');
-    width: 50px;
-    height: 12px;
-    position: absolute;
-    right: 15px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+  .indent {
+    padding-left: 10px;
+  }
+  .news .ad {
+    height: 110px;
+    line-height: 110px;
+    margin: 0;
+    margin-bottom: 15px;
   }
 </style>

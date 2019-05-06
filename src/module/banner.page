@@ -5,15 +5,15 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="https://cunchu.site/ozzx/resource/img1.jpg">
-            <div class="text">全省“法治进校园”巡讲团首站——晋中</div>
+            <a class="text">全省“法治进校园”巡讲团首站——晋中</a>
           </div>
           <div class="swiper-slide">
             <img src="https://cunchu.site/ozzx/resource/img1.jpg">
-            <div class="text">全省“法治进校园”巡讲团首站——晋中</div>
+            <a class="text">全省“法治进校园”巡讲团首站——晋中</a>
           </div>
           <div class="swiper-slide">
             <img src="https://cunchu.site/ozzx/resource/img1.jpg">
-            <div class="text">全省“法治进校园”巡讲团首站——晋中</div>
+            <a class="text">全省“法治进校园”巡讲团首站——晋中</a>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
     </div>
     <div class="right">
       <div class="right-item" @for="item in newsList">
-        <div class="title">{{item.name}}</div>
+        <a class="title" href="{{item.url}}">{{item.name}}</a>
         <div class="text">{{item.text}}</div>
       </div>
     </div>
@@ -33,20 +33,22 @@
 module.exports = {
   data: {
     newsList: [
-      {"name": "阿森纳1-0返前四 对手送礼奥巴破门", "text": "埃梅里比温格强？阿森纳积分已超上赛季却还争利物浦将夺冠奥巴梅扬终结客场球荒冲击金靴 门神：他太快了冲击金靴"},
-      {"name": "阿森纳1-0返前四 对手送礼奥巴破门", "text": "埃梅里比温格强？阿森纳积分已超上赛季却还争利物浦将夺冠奥巴梅扬终结客场球荒冲击金靴 门神：他太快了冲击金靴"},
-      {"name": "阿森纳1-0返前四 对手送礼奥巴破门", "text": "埃梅里比温格强？阿森纳积分已超上赛季却还争利物浦将夺冠奥巴梅扬终结客场球荒冲击金靴 门神：他太快了冲击金靴"},
+      {"name": "阿森纳1-0返前四 对手送礼奥巴破门", "text": "埃梅里比温格强？阿森纳积分已超上赛季却还争利物浦将夺冠奥巴梅扬终结客场球荒冲击金靴 门神：他太快了冲击金靴", "url": "http://www.people.com.cn/"},
+      {"name": "阿森纳1-0返前四 对手送礼奥巴破门", "text": "埃梅里比温格强？阿森纳积分已超上赛季却还争利物浦将夺冠奥巴梅扬终结客场球荒冲击金靴 门神：他太快了冲击金靴", "url": "http://www.people.com.cn/"},
+      {"name": "阿森纳1-0返前四 对手送礼奥巴破门", "text": "埃梅里比温格强？阿森纳积分已超上赛季却还争利物浦将夺冠奥巴梅扬终结客场球荒冲击金靴 门神：他太快了冲击金靴", "url": "http://www.people.com.cn/"},
     ]
   },
   created: () => {
-    new Swiper('.swiper-container', {
-      autoplay: 3000,
-      pagination: '.pagination-pPX8XxuUyIehAAEu',
-      paginationClickable: true
-    })
     setTimeout(() => {
-      const dom = document.getElementsByClassName('pagination-pPX8XxuUyIehAAEu')[0]
-      dom.style.width = dom.children.length * 20 + 'px'
+      new Swiper('.swiper-container', {
+        autoplay: 3000,
+        pagination: '.pagination-pPX8XxuUyIehAAEu',
+        paginationClickable: true
+      })
+      setTimeout(() => {
+        const dom = document.getElementsByClassName('pagination-pPX8XxuUyIehAAEu')[0]
+        dom.style.width = dom.children.length * 20 + 'px'
+      }, 100)
     }, 0)
   }
 }
@@ -81,6 +83,8 @@ module.exports = {
     position: absolute;
     bottom: 0;
     width: 96%;
+    display: block;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0 2%;
     color: white;
@@ -113,6 +117,8 @@ module.exports = {
     font-size: 14px;
     color: #595757;
     line-height: 25px;
+    height: 70px;
+    overflow: hidden;
   }
 }
 .pagination-pPX8XxuUyIehAAEu {

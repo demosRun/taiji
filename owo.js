@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       name: 'viewport',
-      content: 'initial-scale=1,user-scalable=no,maximum-scale=1',
+      content: 'width=1200px, initial-scale=1.0, user-scalable=no',
     }
   ],
   // 使用到的外部脚本清单

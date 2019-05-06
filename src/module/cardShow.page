@@ -1,0 +1,61 @@
+<template>
+  <div class="card-show">
+    <a class="title-bar" href="#">传承谱系</a>
+    <a class="more" href="#"></a>
+    <li class="new-item" @for="item in newsList"><a href="{{item.url}}">{{item.name}}</a></li>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      newsList: [
+        {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
+        {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
+        {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
+        {"name": "人民电竞腾讯电竞强强联人民电竞腾讯电", "url": "http://www.people.com.cn/"},
+      ]
+    }
+  }
+</script>
+
+<style lang="less">
+.card-show {
+  background-color: #f2f2f2;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  position: relative;
+  background-image: url('@&clould.png&');
+  background-repeat: no-repeat;
+  background-position: 90px 15px;
+}
+.title-bar {
+  display: block;
+  font-size: 19px;
+  line-height: 28px;
+  padding: 15px 0;
+  color: #050000;
+  letter-spacing: 3px;
+}
+.title-bar:hover {
+  color: #c00;
+}
+// 查看更多
+.more {
+  background-image: url('@&more.png&');
+  width: 50px;
+  height: 12px;
+  position: absolute;
+  right: 15px;
+  top: 23px;
+  margin: auto;
+}
+.new-item {
+  a {
+    color: #595757;
+    font-size: 12px;
+    line-height: 28px;
+    display: inline-block;
+  }
+}
+</style>

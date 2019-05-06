@@ -44,4 +44,9 @@
     font-size: 13px;
   }
 }
+li {
+  overflow: hidden;
+  height: 36px;
+  width: 470px;
+}
 </style>

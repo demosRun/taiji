@@ -6,8 +6,8 @@
         <div class="info">{{item.name}}</div>
       </a>
       <div class="right">
-        <div class="title">{{item.title}}</div>
-        <div class="text">{{item.info}}</div>
+        <a class="title">{{item.title}}</a>
+        <a class="text">{{item.info}}</a>
       </div>
       <div class="clear"></div>
     </div>
@@ -28,7 +28,7 @@
 
 <style lang="less">
 .info-box {
-  width: 300px;
+  width: 310px;
   padding: 10px 0;
   background-color: #f2f2f2;
 }
@@ -69,12 +69,19 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     height: 48px;
+    color: #595757;
+    display: block;
+    text-indent: 12px;
     -webkit-box-orient: vertical;
   }
   .title {
     font-size: 14px;
     font-weight: bold;
     line-height: 40px;
+    color: #595757;
+  }
+  .title:hover {
+    color: #c00;
   }
 }
 .new-item {

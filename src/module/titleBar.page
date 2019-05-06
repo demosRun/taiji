@@ -9,13 +9,13 @@
   module.exports = {
     data: {
       itemLiat: [
-        {"name": "新闻", "url": "http://www.people.com.cn/"},
-        {"name": "名队", "url": "http://www.people.com.cn/"},
-        {"name": "名门", "url": "http://www.people.com.cn/"},
-        {"name": "圣地", "url": "http://www.people.com.cn/"},
-        {"name": "公益", "url": "http://www.people.com.cn/"},
-        {"name": "科学", "url": "http://www.people.com.cn/"},
-        {"name": "太极乐", "url": "http://www.people.com.cn/"},
+        {"name": "新  闻", "url": "http://www.people.com.cn/"},
+        {"name": "名  队", "url": "http://www.people.com.cn/"},
+        {"name": "名  门", "url": "http://www.people.com.cn/"},
+        {"name": "圣  地", "url": "http://www.people.com.cn/"},
+        {"name": "公  益", "url": "http://www.people.com.cn/"},
+        {"name": "科  学", "url": "http://www.people.com.cn/"},
+        {"name": "太 极 乐", "url": "http://www.people.com.cn/"},
       ]
     }
   }
@@ -40,12 +40,14 @@
     text-align: center;
     border-left: 1px solid white;
   }
+  a:hover {
+    color: white;
+  }
   a:nth-last-child(2) {
     border-right: 1px solid white;
   }
 }
 .title-bar-item {
   width: 129px;
-  letter-spacing: 12px;
 }
 </style>

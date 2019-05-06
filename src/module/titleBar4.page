@@ -1,6 +1,7 @@
 <template>
   <div class="title-bar">
     <slot></slot>
+    <a class="more" href="#"></a>
   </div>
 </template>
 
@@ -11,5 +12,14 @@
   line-height: 50px;
   letter-spacing: 5px;
 }
-
+.more {
+  background-image: url('@&more.png&');
+  width: 50px;
+  height: 12px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 </style>
