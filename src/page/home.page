@@ -41,7 +41,7 @@
         <!-- 祥云小卡片1 -->
         <div class="news left">
           <temple name="titleBar3" src="./src/module/titleBar3.page">名门</temple>
-          <temple name="cardShow" title="df" src="./src/module/cardShow.page"></temple>
+          <temple name="cardShow" src="./src/module/cardShow.page"></temple>
         </div>
         <!-- 祥云小卡片2 -->
         <div class="news left">
@@ -78,9 +78,11 @@
       <div class="content-box indent">
         <div class="big-image-box left">
           <temple name="titleBar3" src="./src/module/titleBar3.page">启动仪式</temple>
-          <a target="_blank" class="image-box" href="#">
-            <img src="@&image.png&">
-          </a>
+          <div class="image-box">
+            <a target="_blank" href="#">
+              <img src="@&image.png&">
+            </a>
+          </div>
         </div>
         <!-- 广告卡片 -->
         <div class="news left">
@@ -142,6 +144,9 @@
     .big-image-box {
       .image-box {
         display: block;
+        a {
+          display: block;
+        }
       }
       img {
         width: 100%;
@@ -149,8 +154,8 @@
       }
     }
     .video-box {
-      width: 300px;
-      padding-left: 30px;
+      width: 310px;
+      padding-left: 20px;
     }
     .news {
       width: 310px;

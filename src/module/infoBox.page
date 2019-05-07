@@ -1,16 +1,25 @@
 <template>
   <div class="info-box">
     <div class="image-item" @for="item in data.imageList">
-      <a target="_blank" class="left" href="{{item.url}}">
-        <img class="left" src="@&video.png&"/>
-      </a>
+      <div class="left">
+        <a target="_blank" href="{{item.url}}">
+          <img src="@&image2.png&"/>
+        </a>
+      </div>
+      
       <div class="right">
-        <a target="_blank" class="title" href="#">{{item.title}}</a>
+        <div class="title">
+          <a target="_blank" href="{{item.url}}">{{item.title}}</a>
+        </div>
         <div class="text">{{item.info}}</div>
       </div>
       <div class="clear"></div>
     </div>
-    <li class="new-item" @for="item in data.newsList"><a target="_blank" href="{{item.url}}">{{item.name}}</a></li>
+    <ul>
+      <li class="new-item" @for="item in data.newsList">
+        <a target="_blank" href="{{item.url}}">{{item.name}}</a>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -33,7 +42,14 @@
 .info-box {
   width: 310px;
   padding: 10px 0;
+  margin: 0;
+  overflow: hidden;
   background-color: #f2f2f2;
+  ul {
+    margin: 0;
+    padding: 0px;
+    padding-left: 5px;
+  }
 }
 .left, .right {
   float: left;
@@ -49,6 +65,11 @@
   margin-right: 10px;
   position: relative;
   img {
+    width: 100%;
+    height: 100%;
+  }
+  a {
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -71,13 +92,16 @@
     font-size: 14px;
     font-weight: bold;
     line-height: 40px;
-    color: #595757;
-  }
-  .title:hover {
-    color: #c00;
+    a {
+      color: #595757;
+    }
+    .a:hover {
+      color: #c00;
+    }
   }
 }
 .new-item {
+  cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -88,10 +112,11 @@
     display: inline-block;
   }
 }
-.new-item:nth-child(2) { 
+.new-item:nth-child(1) { 
   padding-top: 15px;
 }
 .new-item:nth-last-child(1) {
   padding-bottom: 11px;
 }
+
 </style>

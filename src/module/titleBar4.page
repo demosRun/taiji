@@ -1,7 +1,9 @@
 <template>
   <div class="title-bar">
     <slot></slot>
-    <a target="_blank" class="more" href="#"></a>
+    <div class="more">
+      <a target="_blank" href="#"></a>
+    </div>
   </div>
 </template>
 
@@ -21,5 +23,10 @@
   top: 0;
   bottom: 0;
   margin: auto;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

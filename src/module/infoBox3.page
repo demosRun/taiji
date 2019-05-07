@@ -1,7 +1,7 @@
 <template>
-  <div class="info-box-3">
+  <ul class="info-box-3">
     <li class="new-item" @for="item in data.newsList"><a target="_blank" href="{{item.url}}">{{item.name}}</a></li>
-  </div>
+  </ul>
 </template>
 
 <script>
@@ -21,7 +21,9 @@
 <style lang="less">
 .info-box-3 {
   width: 290px;
-  padding: 25px 10px;
+  margin: 0;
+  overflow: hidden;
+  padding: 41px 10px;
   background-color: #f2f2f2;
 }
 .left, .right {
@@ -74,6 +76,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
   a {
     color: #595757;
     font-size: 12px;

@@ -1,10 +1,10 @@
 <template>
-  <div class="consultation-box">
-    <div class="consultation-item" @for="item in data.itemLiat">
-      <li><a target="_blank" href="{{item.url}}">{{item.name}}</a></li>
+  <ul class="consultation-box">
+    <li class="consultation-item" @for="item in data.itemLiat">
+      <a target="_blank" href="{{item.url}}">{{item.name}}</a>
       <div class="time">[{{item.time}}]</div>
-    </div>
-  </div>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -34,6 +34,7 @@
   line-height: 36px;
   font-size: 15px;
   position: relative;
+  cursor: pointer;
   a {
     color: #595757;
   }
@@ -42,11 +43,33 @@
     right: 20px;
     bottom: 0;
     font-size: 13px;
+    clear: both;
   }
 }
 li {
   overflow: hidden;
   height: 36px;
-  width: 470px;
+}
+li:before {
+  content: '•';
+  color: #595757;
+  width: 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  line-height: 36px;
+}
+a {
+  height: 36px;
+  width: 438px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  cursor: pointer;
+}
+ul {
+  padding: 0;
 }
 </style>

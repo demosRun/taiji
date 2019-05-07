@@ -1,17 +1,23 @@
 <template>
-  <div class="info-box">
+  <ul class="info-box">
     <div class="image-item" @for="item in data.imageList">
-      <a target="_blank" class="left" href="{{item.url}}">
-        <img class="left" src="@&video.png&"/>
-      </a>
+      <div class="left">
+        <a target="_blank" href="{{item.url}}">
+          <img class="left" src="@&image2.png&"/>
+        </a>
+      </div>
       <div class="right">
-        <a target="_blank" class="title">{{item.title}}</a>
+        <div class="title">
+          <a target="_blank">{{item.title}}</a>
+        </div>
         <div class="text">{{item.info}}</div>
       </div>
       <div class="clear"></div>
     </div>
-    <li class="new-item" @for="item in data.newsList"><a target="_blank" href="{{item.url}}">{{item.name}}</a></li>
-  </div>
+    <li class="new-item" @for="item in data.newsList">
+      <a target="_blank" href="{{item.url}}">{{item.name}}</a>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -29,6 +35,8 @@
 .info-box {
   width: 310px;
   padding: 10px 0;
+  margin: 0;
+  overflow: hidden;
   background-color: #f2f2f2;
 }
 .left, .right {
@@ -44,7 +52,8 @@
   height: 90px;
   margin-right: 10px;
   position: relative;
-  img {
+  img, a {
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -68,15 +77,19 @@
     font-weight: bold;
     line-height: 40px;
     color: #595757;
-  }
-  .title:hover {
-    color: #c00;
+    a {
+      color: #595757;
+    }
+    .a:hover {
+      color: #c00;
+    }
   }
 }
 .new-item {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
   a {
     color: #595757;
     font-size: 12px;

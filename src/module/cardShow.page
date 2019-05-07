@@ -1,8 +1,12 @@
 <template>
   <div class="card-show">
     <div class="title-bar">传承谱系</div>
-    <a target="_blank" class="more" href="#"></a>
-    <li class="new-item" @for="item in data.newsList"><a target="_blank" href="{{item.url}}">{{item.name}}</a></li>
+    <div class="more">
+      <a target="_blank" href="#"></a>
+    </div>
+    <ul>
+      <li class="new-item" @for="item in data.newsList"><a target="_blank" href="{{item.url}}">{{item.name}}</a></li>
+    </ul>
   </div>
 </template>
 
@@ -46,16 +50,26 @@
   right: 15px;
   top: 23px;
   margin: auto;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 .new-item {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
   a {
     color: #595757;
     font-size: 12px;
     line-height: 28px;
     display: inline-block;
   }
+}
+ul {
+  padding: 0;
+  margin-left: -10px;
 }
 </style>

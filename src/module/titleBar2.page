@@ -1,9 +1,11 @@
 <template>
   <div class="switch-bar">
     <div class="title-bar">
-      <span class="active title-bar-item">咨询</span>
+      <span class="active title-bar-item">资讯</span>
       <span class="title-bar-item">政策解读</span>
-      <a target="_blank" class="more" href="#"></a>
+      <div class="more">
+        <a target="_blank" href="#"></a>
+      </div>
     </div>
     <div class="consultation-panel">
       <div class="consultation-bar index-1">
@@ -90,5 +92,11 @@
   top: 0;
   bottom: 0;
   margin: auto;
+  cursor: pointer;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
