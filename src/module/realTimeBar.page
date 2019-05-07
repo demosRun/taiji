@@ -4,16 +4,16 @@
       <span class="tip">即时新闻</span>
       <div class="marquee-box">
         <marquee direction="left" scrollamount="3" width="520" height="34" onmousemove="stop()" onmouseout="start()">
-          <a href="/n1/2019/0505/c22141-31063839.html" target="_blank">西甲-武磊重回首发 西班牙人主场3-0完胜马竞</a>
-          <a href="/n1/2019/0505/c22141-31063786.html" target="_blank">英超-萨拉赫破门伤退奥里吉绝杀 利物浦3-2险胜纽卡</a>
-          <a href="/n1/2019/0505/c407727-31063777.html" target="_blank">国际化团队助航 中国短道队训练忙</a>
-          <a href="/n1/2019/0505/c22155-31063772.html" target="_blank">女垒亚洲杯：中国女垒晋级半决赛 锁定奥运资格赛“门票”</a>
-          <a href="/n1/2019/0505/c22134-31063735.html" target="_blank">在恒大主场拿到3分 于大宝坦言这让球队更自信</a>
-          <a href="/n1/2019/0505/c22134-31063722.html" target="_blank">施密特：考虑夺冠为时尚早，更需着眼下周亚冠</a>
-          <a href="/n1/2019/0505/c22134-31063703.html" target="_blank">锻炼年轻球员的同时 卡纳瓦罗更奢望窗口期</a>
-          <a href="/n1/2019/0505/c22149-31063682.html" target="_blank">4加时 NBA66年再现史诗级大战</a>
-          <a href="/n1/2019/0505/c22155-31063647.html" target="_blank">高清：女排亚俱杯天津3-0力克日本久光 将与泰国球队争冠</a>
-          <a href="/n1/2019/0505/c22155-31063607.html" target="_blank">花游系列赛首日中国队摘金夺铜</a>
+          <a target="_blank" href="/n1/2019/0505/c22141-31063839.html" target="_blank">西甲-武磊重回首发 西班牙人主场3-0完胜马竞</a>
+          <a target="_blank" href="/n1/2019/0505/c22141-31063786.html" target="_blank">英超-萨拉赫破门伤退奥里吉绝杀 利物浦3-2险胜纽卡</a>
+          <a target="_blank" href="/n1/2019/0505/c407727-31063777.html" target="_blank">国际化团队助航 中国短道队训练忙</a>
+          <a target="_blank" href="/n1/2019/0505/c22155-31063772.html" target="_blank">女垒亚洲杯：中国女垒晋级半决赛 锁定奥运资格赛“门票”</a>
+          <a target="_blank" href="/n1/2019/0505/c22134-31063735.html" target="_blank">在恒大主场拿到3分 于大宝坦言这让球队更自信</a>
+          <a target="_blank" href="/n1/2019/0505/c22134-31063722.html" target="_blank">施密特：考虑夺冠为时尚早，更需着眼下周亚冠</a>
+          <a target="_blank" href="/n1/2019/0505/c22134-31063703.html" target="_blank">锻炼年轻球员的同时 卡纳瓦罗更奢望窗口期</a>
+          <a target="_blank" href="/n1/2019/0505/c22149-31063682.html" target="_blank">4加时 NBA66年再现史诗级大战</a>
+          <a target="_blank" href="/n1/2019/0505/c22155-31063647.html" target="_blank">高清：女排亚俱杯天津3-0力克日本久光 将与泰国球队争冠</a>
+          <a target="_blank" href="/n1/2019/0505/c22155-31063607.html" target="_blank">花游系列赛首日中国队摘金夺铜</a>
         </marquee>
       </div>
       <div class="clear"></div>

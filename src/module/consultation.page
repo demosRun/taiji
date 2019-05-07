@@ -1,7 +1,7 @@
 <template>
   <div class="consultation-box">
     <div class="consultation-item" @for="item in data.itemLiat">
-      <li><a href="{{item.url}}">{{item.name}}</a></li>
+      <li><a target="_blank" href="{{item.url}}">{{item.name}}</a></li>
       <div class="time">[{{item.time}}]</div>
     </div>
   </div>

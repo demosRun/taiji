@@ -9,7 +9,7 @@
       <img src="http://sports.people.com.cn/NMediaFile/2018/0226/MAIN201802261120268327536804169.png" width="147" height="147" border="0" alt="人民体育微信公号">
       人民体育微信公号
     </span>
-    <a title="返回顶部" class="go_top" href="#"></a>
+    <a target="_blank" title="返回顶部" class="go_top" href="#"></a>
   </div>
 </template>
 

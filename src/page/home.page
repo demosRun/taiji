@@ -21,17 +21,17 @@
       <div class="content-box stage">
         <!-- 小型卡片 -->
         <div class="news left">
-          <temple name="titleBar3" src="./src/module/titleBar3.page">公益</temple>
+          <temple name="titleBar4" src="./src/module/titleBar4.page">公益</temple>
           <temple name="infoBox" src="./src/module/infoBox.page"></temple>
         </div>
         <!-- 小型卡片 -->
         <div class="news left">
-          <temple name="titleBar3" src="./src/module/titleBar3.page">名队</temple>
+          <temple name="titleBar4" src="./src/module/titleBar4.page">名队</temple>
           <temple name="infoBox2" src="./src/module/infoBox2.page"></temple>
         </div>
         <!-- 小型卡片 -->
         <div class="news left">
-          <temple name="titleBar3" src="./src/module/titleBar3.page">圣地</temple>
+          <temple name="titleBar4" src="./src/module/titleBar4.page">圣地</temple>
           <temple name="infoBox2" src="./src/module/infoBox2.page"></temple>
         </div>
         <div class="clear"></div>
@@ -78,7 +78,7 @@
       <div class="content-box indent">
         <div class="big-image-box left">
           <temple name="titleBar3" src="./src/module/titleBar3.page">启动仪式</temple>
-          <a class="image-box" href="#">
+          <a target="_blank" class="image-box" href="#">
             <img src="@&image.png&">
           </a>
         </div>
@@ -92,6 +92,8 @@
         <div class="clear"></div>
       </div>
     </div>
+    <!-- 右侧悬浮 -->
+    <!-- 暂时没有所以隐藏 -->
     <temple name="float" src="./src/module/float.page"></temple>
     <!-- 底部版权信息 -->
     <temple name="copyright" src="https://owo.ink/public/e0504bd4054937501c2fe0f22b43fe1e.page"></temple>
@@ -163,5 +165,9 @@
     line-height: 110px;
     margin: 0;
     margin-bottom: 15px;
+  }
+  .news .ad:hover {
+    color: white;
+    text-decoration: none;
   }
 </style>

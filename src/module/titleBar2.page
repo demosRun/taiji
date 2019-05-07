@@ -3,7 +3,7 @@
     <div class="title-bar">
       <span class="active title-bar-item">咨询</span>
       <span class="title-bar-item">政策解读</span>
-      <a class="more" href="#"></a>
+      <a target="_blank" class="more" href="#"></a>
     </div>
     <div class="consultation-panel">
       <div class="consultation-bar index-1">

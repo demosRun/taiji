@@ -1,7 +1,7 @@
 <template>
   <div class="title-bar">
     <slot></slot>
-    <a class="more" href="#"></a>
+    <a target="_blank" class="more" href="#"></a>
   </div>
 </template>
 
